@@ -4,43 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>News</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/elp0ohg.css">
     <style>
-        .banner-heading {
-            font-family: "bilo", sans-serif;
-            font-weight: 800;
-            font-style: normal;
-            font-size: 4vw;
-        }
-        .orange-text {
-            color: #F9A983;
-        }
-        .banner-subtext {
-            color: gray;
-            font-size: 2vw;
-        }
-
-        .subsection-title {
-            font-family: "ltc-goudy-oldstyle-pro", serif;
-            font-weight: 700;
-            font-style: normal;
-            text-align: center;
-        }
-
-        .subsection-subtext {
-            font-family: "soleil", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: gray;
-            text-align: center;
-        }
-
-        .border-bottom {
-            border-width: 5px !important;
-        }
         .card-subtitle {
             color: gray;
             font-family: "soleil", sans-serif;
@@ -54,9 +22,6 @@
         }
 
         @media (max-width: 767px) {
-            .btn-responsive {
-                font-size: 0.6em;
-            } 
             .navbar-toggler-icon {
                 font-size: 5vw !important;
             }
@@ -77,10 +42,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="dropdown-menu dropdown-menu-end" id="nav">
-                <a href="#" class="dropdown-item">Home</a>
+                <a href="home.html" class="dropdown-item">Home</a>
                 <a href="#" class="dropdown-item">Who we are</a>
                 <a href="#" class="dropdown-item">What we do</a>
-                <a href="news.html" class="dropdown-item">News</a>
+                <a href="#" class="dropdown-item">News</a>
                 <a href="#" class="dropdown-item">Gallery</a>
                 <a href="#" class="dropdown-item">Contact Us</a>
                 <a href="#" class="dropdown-item">Donate</a>
@@ -88,44 +53,12 @@
             </div>
          </div>
     </nav>
-    <div class="container-fluid" style="padding: 0;">
-        <div class="card">
-            <img src="images/HomeBanner.png" class="img-fluid"></img>
-            <div class="card-img-overlay d-flex d-block flex-column justify-content-center" style="color: white;">
-                <div class="row">
-                    <div class="col-md-5 col-sm-7 col-10">
-                        <h1 class="card-title px-5 banner-heading display-3">Haitian Alliance for <span class="orange-text">Community Action</span> Inc.</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5 col-sm-7 col-10">
-                        <p class="card-text px-5 banner-subtext">Creating the basis for strong families and successful communities.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5 col-sm-7 col-10">
-                        <button class="btn my-4 mx-5 px-sm-5 btn-lg tn-block btn-outline-light btn-responsive">Donate</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container text-center" >
+        <img src="images/news_page_main_img.png" class="img-fluid"></img>
     </div>
     <div class="container py-5 px-5">
-        <div class="border-bottom border-warning pb-5">
-            <h1 class="subsection-title my-5">Our Mission: </h1>
-            <h3 class="subsection-subtext my-5">
-                To create better life opportunities for the most underprivileged children in the underdeveloped rural communities of Bellevue de la Montagne, an area south of Petionville, Haiti. 
-            </h3>
-            <h3 class="subsection-subtext my-5">
-                To provide them with the basic necessities of life such as food, education, and health care in order to facilitate the development of individuals into productive citizens, creating the basis for strong families and successful communities.
-            </h3>
-            <div class="text-center">
-                <button class="btn my-4 mx-5 px-sm-5 btn-lg tn-block btn-outline-dark align-items-lg-center">Learn More</button>
-            </div>
-        </div>
         <div class="pt-4">
-            <h1 class="subsection-title my-5 mb-md-8">Latest News</h1>
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-lg-3 col-4 mx-auto">
                     <div class="card">
                         <img src="images/DecemberNewsletter.png"/>
@@ -143,6 +76,20 @@
                         <img src="images/JuneNewsletter.png"/>
                     </div>
                     <p class="card-subtitle mt-2">June 27, 2022 · 2 min read</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-3 col-4 mx-auto">
+                    <div class="card">
+                        <img src="images/SummerNewsletter.png"/>
+                    </div>
+                    <p class="card-subtitle mt-2">June 13, 2018 · 2 min read</p>
+                </div>
+                <div class="col-lg-3 col-4 mx-auto">
+                    <!-- PLACEHOLDER -->
+                </div>
+                <div class="col-lg-3 col-4 mx-auto">
+                    <!-- PLACEHOLDER -->
                 </div>
             </div>
         </div>
