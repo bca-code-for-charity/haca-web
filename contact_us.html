@@ -10,12 +10,21 @@
     <title>Document</title>
 </head>
 <style>
-    
+    label{
+        font-family: "soleil";
+        color:gray;
+    }
+
     .form-control {
         font-family: "soleil";
         font-weight: 300;
         border: 2px solid black;
         border-radius: 0px;
+    }
+
+    .form-control:hover {
+        
+        background-color: rgb(232, 235, 237);
     }
     .header {
         color: black;
@@ -30,6 +39,9 @@
         width: 100%;
         background-color: black;
         color: white; 
+    }
+    .btn:hover {
+        background-color: gray;
     }
     .horizontal-div {
         background-color: #F9A983;
@@ -47,20 +59,20 @@
 <body>
     <nav class="navbar navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="images/HACA_brand_img.png" class="col-4 img-fluid"></img>
+            <img src="images/HACA_brand_img.png" class="col-md-3 col-4 img-fluid"></img>
         </a>
         <div>
             <button class="bg-white border-0" data-bs-toggle="dropdown" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="dropdown-menu dropdown-menu-end" id="nav">
-                <a href="#" class="dropdown-item">Home</a>
+                <a href="home.html" class="dropdown-item">Home</a>
                 <a href="#" class="dropdown-item">Who we are</a>
                 <a href="#" class="dropdown-item">What we do</a>
-                <a href="#" class="dropdown-item">News</a>
-                <a href="#" class="dropdown-item">Gallery</a>
-                <a href="#" class="dropdown-item">Contact Us</a>
-                <a href="#" class="dropdown-item">Donate</a>
+                <a href="news.html" class="dropdown-item">News</a>
+                <a href="gallery.html" class="dropdown-item">Gallery</a>
+                <a href="contact_us.html" class="dropdown-item">Contact Us</a>
+                <a href="donate.html" class="dropdown-item">Donate</a>
                 <a href="#" class="dropdown-item">Blog</a>
             </div>
          </div>
@@ -68,22 +80,26 @@
     <div class="container">
         <h1 class = "header">Get in Touch</h1>
         <form class="row g-3">
-            <div class="col-md-6">
+            <div class="form-floating col-md-6">
                 <input type="text" class="form-control" id="firstName" required placeholder="First Name"> 
+                <label for="text">First Name</label>
             </div>
-            <div class="col-md-6">
+            <div class="form-floating col-md-6">
                 <input type="text" class="form-control" id="lastName" required placeholder="Last Name">
+                <label for="text">Last Name</label>
             </div>
-            <div class="col-md-6">
+            <div class="form-floating col-md-6">
                 <input type="email" class="form-control" id="emailInfo" required placeholder="Email Address">
+                <label for="email">Email</label>
             </div>
-            <div class="col-md-6">
+            <div class="form-floating col-md-6">
                 <input type="text" class="form-control" id="phoneNumber" placeholder="Phone">
+                <label for="text">Phone</label>
             </div>
-            <div class="col-md-12">
+            <div class="message col-md-12">
                 <textarea id="message" class="form-control" cols="30" rows="10" required placeholder="Message"></textarea>
             </div>
-            <div class="col-md-12">
+            <div class="form-floating col-md-12">
                 <button type="submit" class="btn">Send</button>
             </div>
         </form>
@@ -91,20 +107,36 @@
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
-                <div class="horizontal-div my-5"></div>
+                <div class="horizontal-div my-3"></div>
             </div>
             <div class="col-3"></div>
         </div>
 
-        <div class="row my-3">
-            <div class="col">
-                <img src="contact_us_images/contactusimg1.png" class="img-fluid" style="width:100%">
+        <div class="row my-3 d-md-flex d-none">
+            <div class="col-4 my-3">
+                <img src="contact_us_images/contactusimg1.png" class="img-fluid" style="width:100%; max-width: 500px;">
             </div>
-            <div class="col">
-                <img src="contact_us_images/contactusimg2.png" class="img-fluid" style="width:100%">
+            <div class="col-4 my-3">
+                <img src="contact_us_images/contactusimg2.png" class="img-fluid" style="width:100%; max-width:500px;">
             </div>
+            <div class="col-4 my-3">
+                <img src="contact_us_images/contactusimg3.png" class="img-fluid" style="width:100%; max-width: 500px;">
+            </div>
+        </div>
+
+        <div class="d-md-none row my-0">
             <div class="col">
-                <img src="contact_us_images/contactusimg3.png" class="img-fluid" style="width:100%">
+                <div class="text-center">Phone: (201) 567-1395</div>
+            </div>
+        </div>
+        <div class="d-md-none row my-0">
+            <div class="col">
+                <div class="text-center">Email: questions@hacaonline.org, hacaonline@outlook.com</div>
+            </div>
+        </div>
+        <div class="d-md-none row my-0">
+            <div class="col">
+                <div class="text-center">P.O. box 5742, 55 Smith Street, Englewood NJ, 07631</div>
             </div>
         </div>
     </div>

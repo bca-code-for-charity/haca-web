@@ -10,6 +10,12 @@
     <title>Document</title>
 </head>
 <style>
+    img {
+        filter:grayscale(0.2)
+    }
+    img:hover {
+        filter:grayscale(0)
+    }
     .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
             font-size: 3vw;
@@ -22,20 +28,20 @@
 <body>
     <nav class="navbar navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="images/HACA_brand_img.png" class="col-4 img-fluid"></img>
+            <img src="images/HACA_brand_img.png" class="col-md-3 col-4 img-fluid"></img>
         </a>
         <div>
             <button class="bg-white border-0" data-bs-toggle="dropdown" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="dropdown-menu dropdown-menu-end" id="nav">
-                <a href="#" class="dropdown-item">Home</a>
+                <a href="home.html" class="dropdown-item">Home</a>
                 <a href="#" class="dropdown-item">Who we are</a>
                 <a href="#" class="dropdown-item">What we do</a>
-                <a href="#" class="dropdown-item">News</a>
-                <a href="#" class="dropdown-item">Gallery</a>
-                <a href="#" class="dropdown-item">Contact Us</a>
-                <a href="#" class="dropdown-item">Donate</a>
+                <a href="news.html" class="dropdown-item">News</a>
+                <a href="gallery.html" class="dropdown-item">Gallery</a>
+                <a href="contact_us.html" class="dropdown-item">Contact Us</a>
+                <a href="donate.html" class="dropdown-item">Donate</a>
                 <a href="#" class="dropdown-item">Blog</a>
             </div>
          </div>
@@ -43,10 +49,10 @@
 
     <div class="container-fluid">
         <div class="row g-0">
-            <div class="col g-0">
+            <div class="col-sm-12 col-md-6 g-0">
                 <img src="gal_images/galleryimg1.png" class="img-fluid" style="width:100%">
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-6">
                 <div class="row g-0">
                     <div class="col"><img src="gal_images/galleryimg2.png" class="img-responsive" style="width:100%"></div>
                     <div class="col"><img src="gal_images/galleryimg3.png" class="img-fluid" style="width:100%"></div>
@@ -65,7 +71,7 @@
         </div>
 
         <div class="row g-0">
-            <div class="col">
+            <div class="col-sm-12 col-md-6">
                 <div class="row g-0">
                     <div class="col"><img src="gal_images/galleryimg7.png" class="img-fluid" style="width:100%"></div>
                     <div class="col"><img src="gal_images/galleryimg8.png" class="img-fluid" style="width:100%"></div>
@@ -75,13 +81,13 @@
                     <div class="col"><img src="gal_images/galleryimg10.png" class="img-fluid" style="width:100%"></div>
                 </div>
             </div>
-            <div class="col">
-                <img src="gal_images/galleryimg11.png" class="img-fluid" style="width:100%">
+            <div class="col-sm-12 col-md-6">
+                <img src="gal_images/galleryimg11.jpeg" class="img-fluid" style="width:100%">
             </div>
         </div>
 
         <div class="row g-0">
-            <div class="col-9">
+            <div class="col-sm-12 col-md-9">
                 <img src="gal_images/galleryimg12.png" class="img-fluid" style="width:100%">
             </div>
             <div class="col">
@@ -95,6 +101,15 @@
                         <img src="gal_images/galleryimg14.png" class="img-fluid" style="width:100%">
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="row d-md-none g-0">
+            <div class="col">
+                <img src="gal_images/galleryimg13.png" class="img-fluid" style="width:100%">
+            </div>
+            <div class="col">
+                <img src="gal_images/galleryimg14.jpeg" class="img-fluid" style="width:100%">
             </div>
         </div>
     </div>
