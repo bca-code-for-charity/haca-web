@@ -15,15 +15,14 @@
         color:gray;
     }
 
-    .form-control {
+    .contact-form-control {
         font-family: "soleil";
         font-weight: 300;
         border: 2px solid black;
         border-radius: 0px;
     }
 
-    .form-control:hover {
-        
+    .contact-form-control:hover {
         background-color: rgb(232, 235, 237);
     }
     .header {
@@ -35,18 +34,24 @@
         text-align: center;
         padding: 3%;
     }
-    .btn {
+    .submit-btn {
         width: 100%;
         background-color: black;
         color: white; 
     }
-    .btn:hover {
-        background-color: gray;
+    .submit-btn:hover {
+        background-color: rgb(44, 43, 43);
+        color: white;
     }
     .horizontal-div {
         background-color: #F9A983;
         height: 5px;
         width: 100%;
+    }
+    @media (min-width: 600px) {
+        .flex-wrap {
+        flex-wrap: nowrap;
+        }
     }
     .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -55,6 +60,32 @@
     a.navbar-brand {
         display: contents;
     }
+    .footer {
+            background: linear-gradient(black, rgb(61, 60, 60));
+        }
+        .footer-title {
+            font-family: "ltc-goudy-oldstyle-pro";
+            font-size: 30pt !important;
+            color: white;
+        }
+        .footer-subtext {
+            font-family: "soleil";
+            font-size: 15pt !important;
+            color: white;
+        }
+        .footer-btn {
+            border: 2px solid white !important;
+        }
+        input {
+            border-radius: 0px !important;
+        }
+        .footer-link {
+            color:inherit;
+            text-decoration: none;
+        }
+        .footer-link:hover {
+            color:gray;
+        }
 </style>
 <body>
     <nav class="navbar navbar-light">
@@ -77,53 +108,52 @@
             </div>
          </div>
     </nav>
-    <div class="container">
+    <div class="container" style="max-width: 1200px; padding-bottom: 3%">
         <h1 class = "header">Get in Touch</h1>
         <form class="row g-3">
             <div class="form-floating col-md-6">
-                <input type="text" class="form-control" id="firstName" required placeholder="First Name"> 
-                <label for="text">First Name</label>
+                <input type="text" class="contact-form-control form-control" id="firstName" required placeholder="First Name"> 
+                <label for="text" class="mx-3">First Name</label>
             </div>
             <div class="form-floating col-md-6">
-                <input type="text" class="form-control" id="lastName" required placeholder="Last Name">
-                <label for="text">Last Name</label>
+                <input type="text" class="contact-form-control form-control" id="lastName" required placeholder="Last Name">
+                <label for="text" class="mx-3">Last Name</label>
             </div>
             <div class="form-floating col-md-6">
-                <input type="email" class="form-control" id="emailInfo" required placeholder="Email Address">
-                <label for="email">Email</label>
+                <input type="email" class="contact-form-control form-control" id="emailInfo" required placeholder="Email Address">
+                <label for="email" class="mx-3">Email</label>
             </div>
             <div class="form-floating col-md-6">
-                <input type="text" class="form-control" id="phoneNumber" placeholder="Phone">
-                <label for="text">Phone</label>
+                <input type="text" class="contact-form-control form-control" id="phoneNumber" placeholder="Phone">
+                <label for="text" class="mx-3">Phone</label>
             </div>
-            <div class="message col-md-12">
-                <textarea id="message" class="form-control" cols="30" rows="10" required placeholder="Message"></textarea>
+            <div class="form-floating">
+                <div class="message col-md-12">
+                    <textarea id="message" class="contact-form-control form-control" cols="30" rows="10" required placeholder="Message"></textarea>
+                </div>
             </div>
             <div class="form-floating col-md-12">
-                <button type="submit" class="btn">Send</button>
+                <button type="submit" class="btn submit-btn">Send</button>
             </div>
         </form>
 
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
-                <div class="horizontal-div my-3"></div>
+                <div class="horizontal-div my-5"></div>
             </div>
             <div class="col-3"></div>
         </div>
-
-        <div class="row my-3 d-md-flex d-none">
-            <div class="col-4 my-3">
-                <img src="contact_us_images/contactusimg1.png" class="img-fluid" style="width:100%; max-width: 500px;">
+        
+        
+        <div class="d-flex justify-content-center">
+            <div class="d-none d-md-flex flex-wrap">
+              <img src="contact_us_images/contactusimg1.png" class="m-2 img-fluid" style="max-width: 220px;">
+              <img src="contact_us_images/contactusimg2.png" class="m-2 img-fluid" style="max-width: 220px;">
+              <img src="contact_us_images/contactusimg3.png" class="m-2 img-fluid" style="max-width: 220px;">
             </div>
-            <div class="col-4 my-3">
-                <img src="contact_us_images/contactusimg2.png" class="img-fluid" style="width:100%; max-width:500px;">
-            </div>
-            <div class="col-4 my-3">
-                <img src="contact_us_images/contactusimg3.png" class="img-fluid" style="width:100%; max-width: 500px;">
-            </div>
-        </div>
-
+          </div>
+        
         <div class="d-md-none row my-0">
             <div class="col">
                 <div class="text-center">Phone: (201) 567-1395</div>
@@ -137,6 +167,91 @@
         <div class="d-md-none row my-0">
             <div class="col">
                 <div class="text-center">P.O. box 5742, 55 Smith Street, Englewood NJ, 07631</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="padding-left: 2%; padding-right: 2%">
+        <div class="row gx-lg-5">
+            <div class="col m-auto">
+                <div class="row footer-title m-2" style="padding-top: 5%">
+                    Subscribe
+                </div>
+                <div class="row footer-subtext m-2">
+                    Join our mailing list. Never miss an update!
+                </div>
+                <div class="row">
+                    <form>
+                        <div class="input-group my-lg-1">
+                            <div class="col form-floating" style="max-width:500px">
+                                <input type="email" class="form-control" id="phoneNumber" placeholder="Email">
+                                <label for="email" class="mx-3">Email</label>
+                            </div>
+                            <button class="btn footer-btn btn-dark">Subscribe</button>
+                        </div>
+                    </form>  
+                </div>
+                <div class="row" style="padding-left: 1%; padding-bottom: 1%; padding-top:3%;">
+                    <div class="col-sm-1 col-2  mx-0">
+                        <a href="#">
+                            <img src="footer_images/footerimg1.jpeg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-sm-1 col-2 mx-0">
+                        <a href="#">
+                            <img src="footer_images/footerimg2.jpeg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-sm-1 col-2 mx-0">
+                        <a href="#">
+                            <img src="footer_images/footerimg3.png" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 d-none d-md-block m-auto">
+                <div class="footer-subtext row" style="padding-top: 2%">
+                    <a class="footer-link" href="file:///C:/Users/Giacomo/Desktop/HACA%202/HACA-web/contact_us.html">Contact us</a>
+                </div>
+                <div class="footer-subtext row" style="padding-top: 2%">
+                    <a class="footer-link" href="file:///C:/Users/Giacomo/Desktop/HACA%202/HACA-web/donate.html">Donations</a>
+                </div>
+                <div class="footer-subtext row" style="padding-top: 2%">
+                    <a class="footer-link" href="file:///C:/Users/Giacomo/Desktop/HACA%202/HACA-web/gallery.html">Gallery</a>
+                </div>
+                <div class="footer-subtext row" style="padding-top: 2%">
+                    <a class="footer-link" href="#">Privacy Statement</a>
+                </div>
+            </div>
+            <div class="col-2 m-auto d-none d-md-block">
+                <a href="file:///C:/Users/Giacomo/Desktop/HACA%202/HACA-web/home.html?#">
+                    <img src="footer_images/footerimg4.webp" class="img-fluid">
+                </a>
+            </div>
+        </div>
+        <div class="row d-flex d-md-none">
+            <div class="col-6 m-auto my-5">
+                <div class="footer-subtext row" style="padding-top: 2%">
+                    <a class="footer-link" href="file:///C:/Users/Giacomo/Desktop/HACA%202/HACA-web/contact_us.html">Contact us</a>
+                </div>
+                <div class="footer-subtext row" style="padding-top: 2%">
+                    <a class="footer-link" href="file:///C:/Users/Giacomo/Desktop/HACA%202/HACA-web/donate.html">Donations</a>
+                </div>
+                <div class="footer-subtext row" style="padding-top: 2%">
+                    <a class="footer-link" href="file:///C:/Users/Giacomo/Desktop/HACA%202/HACA-web/gallery.html">Gallery</a>
+                </div>
+                <div class="footer-subtext row" style="padding-top: 2%">
+                    <a class="footer-link" href="#">Privacy Statement</a>
+                </div>
+            </div>
+            <div class="col-6 m-auto my-md-2" style="padding-bottom: 5%; max-width: 200px">
+                <a href="file:///C:/Users/Giacomo/Desktop/HACA%202/HACA-web/home.html?#">
+                    <img src="footer_images/footerimg4.webp" class="img-fluid">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center footer-subtext">
+                <p>Haitian Alliance For Community Action Inc.</p>
             </div>
         </div>
     </div>
