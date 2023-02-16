@@ -9,49 +9,31 @@
     <link rel="stylesheet" href="https://use.typekit.net/elp0ohg.css">
     <title>Document</title>
 </head>
-<style>
-    label{
-        font-family: "soleil";
-        color:gray;
-    }
-
-    .contact-form-control {
-        font-family: "soleil";
-        font-weight: 300;
-        border: 2px solid black;
-        border-radius: 0px;
-    }
-
-    .contact-form-control:hover {
-        background-color: rgb(232, 235, 237);
-    }
+<style>    
     .header {
-        color: black;
+        color: white;
         font-family: "ltc-goudy-oldstyle-pro";
         font-weight: 700;
         font-style: normal;
-        font-size: 50pt;
+        font-size: 65pt;
         text-align: center;
         padding: 3%;
     }
-    .submit-btn {
-        width: 100%;
-        background-color: black;
-        color: white; 
+    .subsection-subtext {
+            font-family: "soleil", sans-serif;
+            font-weight: 400;
+            font-size:1.7em;
+            font-style: normal;
+            color: gray;
+            text-align: center;
     }
-    .submit-btn:hover {
-        background-color: rgb(44, 43, 43);
-        color: white;
-    }
-    .horizontal-div {
-        background-color: #F9A983;
-        height: 5px;
-        width: 100%;
-    }
-    @media (min-width: 600px) {
-        .flex-wrap {
-        flex-wrap: nowrap;
-        }
+    
+    .ltc {
+        color: black;
+        font-family: "ltc-goudy-oldstyle-pro";
+        font-weight: 700;
+        font-size: 60pt;
+        font-style: normal;
     }
     .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -59,6 +41,17 @@
         }
     a.navbar-brand {
         display: contents;
+    }
+    @media (max-width: 1000px) {
+        .ltc {
+            font-size: 5vw !important;
+        }
+        .subsection-subtext {
+            font-size:1em;
+        }
+        .header {
+            font-size:30pt;
+        }
     }
     .footer {
             background: linear-gradient(black, rgb(61, 60, 60));
@@ -85,7 +78,7 @@
         }
         .footer-link:hover {
             color:gray;
-        }
+    }
 </style>
 <body>
     <nav class="navbar navbar-light">
@@ -108,68 +101,65 @@
             </div>
          </div>
     </nav>
-    <div class="container" style="max-width: 1200px; padding-bottom: 3%">
-        <h1 class = "header">Get in Touch</h1>
-        <form class="row g-3">
-            <div class="form-floating col-md-6">
-                <input type="text" class="contact-form-control form-control" id="firstName" required placeholder="First Name"> 
-                <label for="text" class="mx-3">First Name</label>
-            </div>
-            <div class="form-floating col-md-6">
-                <input type="text" class="contact-form-control form-control" id="lastName" required placeholder="Last Name">
-                <label for="text" class="mx-3">Last Name</label>
-            </div>
-            <div class="form-floating col-md-6">
-                <input type="email" class="contact-form-control form-control" id="emailInfo" required placeholder="Email Address">
-                <label for="email" class="mx-3">Email</label>
-            </div>
-            <div class="form-floating col-md-6">
-                <input type="text" class="contact-form-control form-control" id="phoneNumber" placeholder="Phone">
-                <label for="text" class="mx-3">Phone</label>
-            </div>
-            <div class="form-floating">
-                <div class="message col-md-12">
-                    <textarea id="message" class="contact-form-control form-control" cols="30" rows="10" required placeholder="Message"></textarea>
-                </div>
-            </div>
-            <div class="form-floating col-md-12">
-                <button type="submit" class="btn submit-btn">Send</button>
-            </div>
-        </form>
 
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <div class="horizontal-div my-5"></div>
-            </div>
-            <div class="col-3"></div>
+    <div class="container" style="max-width: 1500px">
+        <div class="row my-5">
+            <img src="who_we_are_images/weareimg1.png" class="img-fluid">
         </div>
-        
-        
-        <div class="d-flex justify-content-center">
-            <div class="d-none d-md-flex flex-wrap">
-              <img src="contact_us_images/contactusimg1.png" class="m-2 img-fluid" style="max-width: 220px;">
-              <img src="contact_us_images/contactusimg2.png" class="m-2 img-fluid" style="max-width: 220px;">
-              <img src="contact_us_images/contactusimg3.png" class="m-2 img-fluid" style="max-width: 220px;">
-            </div>
-          </div>
-        
-        <div class="d-md-none row my-0">
-            <div class="col">
-                <div class="text-center">Phone: (201) 567-1395</div>
+        <div class="position-relative my-5">
+            <img src="who_we_are_images/weareimg2.png" class="story img-fluid mx-auto d-block">
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <h1 class="header">Our Story</h1>
             </div>
         </div>
-        <div class="d-md-none row my-0">
-            <div class="col">
-                <div class="text-center">Email: questions@hacaonline.org, hacaonline@outlook.com</div>
+        <div class="row my-5">
+            <p class="subsection-subtext">In 2008, Marie Magdaleine Cazeau made the decision to return to her country, Haiti, for vacation after over a decade of not being home.
+                Even thoush she grew up in Haiti, in the area of Bellevue de la Montagne and knew how hard things had always been, she didn't realize
+                things had gotten even worse.
+            </p>
+        </div>
+    
+        <div class="row my-5">
+            <div class="col-md-7 col my-auto">
+                <p class="subsection-subtext">
+                    She kept hearing news of food disparity and hunger among the people in her community. She therefore decided to use her vacation money to buy food for
+                    the neediest families. With $2,000 and a heart to help, large bags of rice, beans, and augar were purchased. Marie Magdaleine, with her mother and 
+                    daughter by her side, made food kits and distributed them to over 75 needy families of the neighborhood in the bery house where she grew up. 
+                </p>
+            </div>
+            <div class="col-4 d-none d-md-flex mx-3 my-auto">
+                <img src="who_we_are_images/weareimg3.jpg" class="img-fluid">
             </div>
         </div>
-        <div class="d-md-none row my-0">
+        
+        <div class="row my-5">
             <div class="col">
-                <div class="text-center">P.O. box 5742, 55 Smith Street, Englewood NJ, 07631</div>
+                <p class = "subsection-subtext">
+                    Marie Magdaleine flew back to the States with the conviction of finding a way to help. She reported what she had witnessed to her family and friends who came 
+                    from the same community. She urged them to get together and do something, if not for their homeland, for their community, their home. She made an impression.
+                    About 20 people got together with her and founded Haitian Alliance for Community Action Inc (HACA). In the first three years, our initial projects were funded 
+                    with contributions from these original members.
+                </p>
+            </div>
+        </div>
+        <div class="position-relative my-5">
+            <img src="who_we_are_images/weareimg4.png" class="story img-fluid mx-auto d-block">
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <h1 class="header">Our Mission</h1>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col">
+                <p class="subsection-subtext">
+                    The mission of Haitian Alliance for Community Action is to create better life oppurtunites for the most underpirvileged children in the underdeveloped rural
+                    communities of Bellevue de la Montagne, an area south of Petionville, Haiti; to provide them with the basic necessities of life such as food, education
+                    and health care in order to facilitate the development of individuals into productive citizens, creating the basis for strong families and successful 
+                    communities.
+                </p>
             </div>
         </div>
     </div>
+
     <div class="footer" style="padding-left: 2%; padding-right: 2%">
         <div class="row gx-lg-5">
             <div class="col m-auto">
