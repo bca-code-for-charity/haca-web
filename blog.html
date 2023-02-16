@@ -10,48 +10,37 @@
     <title>Document</title>
 </head>
 <style>
-    label{
-        font-family: "soleil";
-        color:gray;
+    .bordered {
+        border: 2px solid black !important;
     }
-
-    .contact-form-control {
-        font-family: "soleil";
-        font-weight: 300;
-        border: 2px solid black;
-        border-radius: 0px;
-    }
-
-    .contact-form-control:hover {
-        background-color: rgb(232, 235, 237);
-    }
-    .header {
+    
+    h1 {
         color: black;
         font-family: "ltc-goudy-oldstyle-pro";
         font-weight: 700;
         font-style: normal;
-        font-size: 50pt;
-        text-align: center;
-        padding: 3%;
+        font-size: 35pt;
     }
-    .submit-btn {
-        width: 100%;
-        background-color: black;
-        color: white; 
+    .subsection-subtext {
+            font-family: "soleil", sans-serif;
+            font-weight: 400;
+            font-size:1.7em;
+            font-style: normal;
+            color: black;
     }
-    .submit-btn:hover {
-        background-color: rgb(44, 43, 43);
-        color: white;
+    .subsection-subtext2 {
+        font-family: "soleil", sans-serif;
+        font-weight: 400;
+        font-size:1.7em;
+        font-style: normal;
+        color: gray;
     }
-    .horizontal-div {
-        background-color: #F9A983;
-        height: 5px;
-        width: 100%;
-    }
-    @media (min-width: 600px) {
-        .flex-wrap {
-        flex-wrap: nowrap;
-        }
+    .ltc {
+        color: black;
+        font-family: "ltc-goudy-oldstyle-pro";
+        font-weight: 700;
+        font-size: 60pt;
+        font-style: normal;
     }
     .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -59,6 +48,20 @@
         }
     a.navbar-brand {
         display: contents;
+    }
+    @media (max-width: 1000px) {
+        .ltc {
+            font-size: 5vw !important;
+        }
+        .header {
+            font-size:25pt;
+        }
+        .subsection-subtext {
+            font-size:1.2em;
+        }
+        .subsection-subtext2 {
+            font-size:1.2em;
+        }
     }
     .footer {
             background: linear-gradient(black, rgb(61, 60, 60));
@@ -85,7 +88,7 @@
         }
         .footer-link:hover {
             color:gray;
-        }
+    }
 </style>
 <body>
     <nav class="navbar navbar-light">
@@ -108,65 +111,150 @@
             </div>
          </div>
     </nav>
-    <div class="container" style="max-width: 1200px; padding-bottom: 3%">
-        <h1 class = "header">Get in Touch</h1>
-        <form class="row g-3">
-            <div class="form-floating col-md-6">
-                <input type="text" class="contact-form-control form-control" id="firstName" required placeholder="First Name"> 
-                <label for="text" class="mx-3">First Name</label>
+    <div class="container">
+        <div class="row my-5">
+            <img src="blog_images/blogimg1.PNG" class="blog-image img-fluid">
+        </div>
+        <div class="row d-none d-md-flex">
+            <div class="col">
+                <img class="img-fluid" src="blog_images/blogimg2.PNG">
             </div>
-            <div class="form-floating col-md-6">
-                <input type="text" class="contact-form-control form-control" id="lastName" required placeholder="Last Name">
-                <label for="text" class="mx-3">Last Name</label>
+            <div class="col">
+                <h1>Header</h1>
+                <h3 class="subsection-subtext">Short little bio goes here</h3>
+                <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
             </div>
-            <div class="form-floating col-md-6">
-                <input type="email" class="contact-form-control form-control" id="emailInfo" required placeholder="Email Address">
-                <label for="email" class="mx-3">Email</label>
+        </div>
+        <div class="row my-5 d-flex d-md-none">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="blog_images/blogimg2.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little bio goes here</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
+                </div>
+                
             </div>
-            <div class="form-floating col-md-6">
-                <input type="text" class="contact-form-control form-control" id="phoneNumber" placeholder="Phone">
-                <label for="text" class="mx-3">Phone</label>
-            </div>
-            <div class="form-floating">
-                <div class="message col-md-12">
-                    <textarea id="message" class="contact-form-control form-control" cols="30" rows="10" required placeholder="Message"></textarea>
+        </div>
+        <div class="row my-5">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="blog_images/blogimg3.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little bio goes here</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
                 </div>
             </div>
-            <div class="form-floating col-md-12">
-                <button type="submit" class="btn submit-btn">Send</button>
-            </div>
-        </form>
-
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <div class="horizontal-div my-5"></div>
-            </div>
-            <div class="col-3"></div>
-        </div>
-        
-        
-        <div class="d-flex justify-content-center">
-            <div class="d-none d-md-flex flex-wrap">
-              <img src="contact_us_images/contactusimg1.png" class="m-2 img-fluid" style="max-width: 220px;">
-              <img src="contact_us_images/contactusimg2.png" class="m-2 img-fluid" style="max-width: 220px;">
-              <img src="contact_us_images/contactusimg3.png" class="m-2 img-fluid" style="max-width: 220px;">
-            </div>
-          </div>
-        
-        <div class="d-md-none row my-0">
-            <div class="col">
-                <div class="text-center">Phone: (201) 567-1395</div>
+            <div class="col d-none d-md-flex">
+                <div class="card">
+                    <img class="card-img-top" src="blog_images/blogimg4.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little bio goes here</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="d-md-none row my-0">
+        <div class="row d-md-none my-5">
             <div class="col">
-                <div class="text-center">Email: questions@hacaonline.org, hacaonline@outlook.com</div>
+                <img class="img-fluid" src="blog_images/blogimg4.PNG">
+            </div>
+            <div class="col">
+                <h1>Header</h1>
+                <h3 class="subsection-subtext">Short little bio goes here</h3>
+                <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
             </div>
         </div>
-        <div class="d-md-none row my-0">
+        
+        <div class="row my-5">
             <div class="col">
-                <div class="text-center">P.O. box 5742, 55 Smith Street, Englewood NJ, 07631</div>
+                <div class="card">
+                    <img class="card-img-top" src="blog_images/blogimg4.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little bio goes here</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="blog_images/blogimg4.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-none d-md-flex">
+                <div class="card">
+                    <img class="card-img-top" src="blog_images/blogimg4.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little bio goes here</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex d-md-none">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="blog_images/blogimg4.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little bio goes here</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="blog_images/blogimg4.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little bio goes here</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5 ">
+            <div class="col d-none d-md-flex">
+                <div class="card">
+                    <img class="blog-image card-img-top" src="blog_images/blogimg4.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little bio goes here</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="blog-image card-img-top" src="blog_images/blogimg4.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little bio goes here</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="blog-image card-img-top" src="blog_images/blogimg4.PNG">
+                    <div class="card-body">
+                        <h1>Header</h1>
+                        <h3 class="subsection-subtext">Short little bio goes here</h3>
+                        <p class="subsection-subtext2">Jun 27, 2022 · 2 min read</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
