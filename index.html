@@ -65,7 +65,34 @@
             .footer {
                 padding:0%;
             }
-
+            .card-subtitle {
+                font-size: 5vw !important;
+            }
+            .super-card-div {
+                padding-left: 15%;
+                padding-right: 15%;
+                padding-bottom: 5%;
+            }
+            .subsection-subtext {
+                font-size: 4vw; 
+            }
+            .banner-heading, .banner-subtext {
+                max-width: 70%;
+            }
+            .banner-heading {
+                font-size: 4vw;
+            }
+            .banner-subtext {
+                font-size: 3vw;
+            }
+        }
+        @media (max-width: 600px) {
+            .banner-heading, .banner-subtext {
+                max-width: 60%;
+            }
+            .banner-heading {
+                padding-top: 10%;
+            }
         }
         .footer {
             background: linear-gradient(black, rgb(61, 60, 60));
@@ -97,19 +124,63 @@
         .card {
             border: none;
         }
+
+        @media (min-width: 200px) {
+            .animate {
+                animation-duration: 0.3s;
+                -webkit-animation-duration: 0.3s;
+                animation-fill-mode: both;
+                -webkit-animation-fill-mode: both;
+            }
+        }
+
+        @keyframes slideIn {
+        0% {
+            transform: translateY(1rem);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+        0% {
+            transform: translateY(1rem);
+            opacity: 0;
+        }
+        }
+
+        @-webkit-keyframes slideIn {
+        0% {
+            -webkit-transform: transform;
+            -webkit-opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            -webkit-opacity: 1;
+        }
+        0% {
+            -webkit-transform: translateY(1rem);
+            -webkit-opacity: 0;
+        }
+        }
+
+        .slideIn {
+            -webkit-animation-name: slideIn;
+            animation-name: slideIn;
+        }
     </style>
 
 </head>
 <body>
     <nav class="navbar navbar-light">
         <a class="navbar-brand" href="index.html">
-            <img src="images/HACA_brand_img.png" class="col-md-3 col-4 img-fluid"></img>
+            <img src="images/HACA_brand_img.png" class="col-md-3 col-4 img-fluid" style="margin-left: 2%;"></img>
         </a>
         <div>
             <button class="bg-white border-0" data-bs-toggle="dropdown" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown-menu dropdown-menu-end" id="nav">
+            <div class="dropdown-menu dropdown-menu-end animate slideIn" id="nav">
                 <a href="index.html" class="dropdown-item">Home</a>
                 <a href="who_we_are.html" class="dropdown-item">Who we are</a>
                 <a href="what_we_do.html" class="dropdown-item">What we do</a>
@@ -127,12 +198,12 @@
             <div class="card-img-overlay d-flex d-block flex-column justify-content-center" style="color: white;">
                 <div class="row">
                     <div class="col-md-5 col-sm-7 col-10">
-                        <h1 class="card-title px-5 banner-heading display-3">Haitian Alliance for <span class="orange-text">Community Action</span> Inc.</h1>
+                        <h1 class="card-title px-lg-5 px-sm-1 banner-heading display-3">Haitian Alliance for <span class="orange-text">Community Action</span> Inc.</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-5 col-sm-7 col-10">
-                        <p class="card-text px-5 banner-subtext">Creating the basis for strong families and successful communities.</p>
+                        <p class="card-text px-lg-5 px-sm-1 banner-subtext">Creating the basis for strong families and successful communities.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -143,13 +214,13 @@
             </div>
         </div>
     </div>
-    <div class="container py-5 px-5">
+    <div class="container py-lg-5 py-sm-2 px-5">
         <div class="border-bottom border-warning pb-5">
-            <h1 class="subsection-title my-5">Our Mission: </h1>
-            <h3 class="subsection-subtext my-5">
+            <h1 class="subsection-title my-4">Our Mission: </h1>
+            <h3 class="subsection-subtext my-lg-5 my-3">
                 To create better life opportunities for the most underprivileged children in the underdeveloped rural communities of Bellevue de la Montagne, an area south of Petionville, Haiti. 
             </h3>
-            <h3 class="subsection-subtext my-5">
+            <h3 class="subsection-subtext my-lg-5 my-3">
                 To provide them with the basic necessities of life such as food, education, and health care in order to facilitate the development of individuals into productive citizens, creating the basis for strong families and successful communities.
             </h3>
             <div class="text-center">
@@ -159,7 +230,7 @@
         <div class="pt-4">
             <h1 class="subsection-title my-5 mb-md-8">Latest News</h1>
             <div class="row">
-                <div class="col-lg-3 col-4 mx-auto">
+                <div class="col-lg-3 col-md-4 mx-auto super-card-div">
                     <div class="card">
                         <img class="card-img-top" src="images/DecemberNewsletter.png"/>
                         <div class="card-body">
@@ -167,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-4 mx-auto">
+                <div class="col-lg-3 col-md-4 mx-auto super-card-div">
                     <div class="card">
                         <img class="card-img-top" src="images/AugustNewsletter.png"/>
                         <div class="card-body">
@@ -175,7 +246,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-4 mx-auto">
+                <div class="col-lg-3 col-md-4 mx-auto super-card-div">
                     <div class="card">
                         <img class="card-img-top" src="images/JuneNewsletter.png"/>
                         <div class="card-body">
@@ -220,7 +291,7 @@
                 </div>
                 
             </div>
-            <div class="col-2 d-none d-md-block m-auto">
+            <div class="col-2 d-none d-md-block">
                 <div class="footer-subtext row" style="padding-top: 2%">
                     <a class="footer-link" href="contact_us.html">Contact us</a>
                 </div>
