@@ -41,15 +41,18 @@
     a.navbar-brand {
         display: contents;
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 767px) {
         .ltc {
             font-size: 5vw !important;
         }
         .subsection-subtext {
-            font-size:1em;
+            font-size:4vw;
         }
         .header {
             font-size:30pt;
+        }
+        .navbar-toggler-icon {
+            font-size: 5vw !important;
         }
     }
     .footer {
@@ -77,18 +80,61 @@
         }
         .footer-link:hover {
             color:gray;
+        }
+    @media (min-width: 200px) {
+        .animate {
+            animation-duration: 0.3s;
+            -webkit-animation-duration: 0.3s;
+            animation-fill-mode: both;
+            -webkit-animation-fill-mode: both;
+        }
+    }
+
+    @keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    }
+
+    @-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+    }
+
+    .slideIn {
+        -webkit-animation-name: slideIn;
+        animation-name: slideIn;
     }
 </style>
 <body>
     <nav class="navbar navbar-light">
         <a class="navbar-brand" href="index.html">
-            <img src="images/HACA_brand_img.png" class="col-md-3 col-4 img-fluid"></img>
+            <img src="images/HACA_brand_img.png" class="col-md-3 col-4 img-fluid" style="margin-left: 2%;"></img>
         </a>
         <div>
             <button class="bg-white border-0" data-bs-toggle="dropdown" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown-menu dropdown-menu-end" id="nav">
+            <div class="dropdown-menu dropdown-menu-end animate slideIn" id="nav">
                 <a href="index.html" class="dropdown-item">Home</a>
                 <a href="who_we_are.html" class="dropdown-item">Who we are</a>
                 <a href="what_we_do.html" class="dropdown-item">What we do</a>

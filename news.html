@@ -25,6 +25,14 @@
             .navbar-toggler-icon {
                 font-size: 5vw !important;
             }
+            .card-subtitle {
+                font-size: 5vw !important;
+            }
+            .super-card-div {
+                padding-left: 15%;
+                padding-right: 15%;
+                padding-bottom: 5%;
+            }
         }
         a.navbar-brand {
             display: contents;
@@ -55,19 +63,74 @@
         .footer-link:hover {
             color:gray;
         }
+
+        .subsection-title {
+            font-family: "ltc-goudy-oldstyle-pro", serif;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+        }
+
+
+        @media (min-width: 200px) {
+            .animate {
+                animation-duration: 0.3s;
+                -webkit-animation-duration: 0.3s;
+                animation-fill-mode: both;
+                -webkit-animation-fill-mode: both;
+            }
+        }
+        @keyframes slideIn {
+        0% {
+            transform: translateY(1rem);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+        0% {
+            transform: translateY(1rem);
+            opacity: 0;
+        }
+        }
+
+        @-webkit-keyframes slideIn {
+        0% {
+            -webkit-transform: transform;
+            -webkit-opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            -webkit-opacity: 1;
+        }
+        0% {
+            -webkit-transform: translateY(1rem);
+            -webkit-opacity: 0;
+        }
+        }
+
+        .slideIn {
+            -webkit-animation-name: slideIn;
+            animation-name: slideIn;
+        }
+
+        .card {
+            border: none;
+        }
     </style>
 
 </head>
 <body>
     <nav class="navbar navbar-light">
         <a class="navbar-brand" href="index.html">
-            <img src="images/HACA_brand_img.png" class="col-md-3 col-4 img-fluid"></img>
+            <img src="images/HACA_brand_img.png" class="col-md-3 col-4 img-fluid" style="margin-left: 2%;"></img>
         </a>
         <div>
             <button class="bg-white border-0" data-bs-toggle="dropdown" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown-menu dropdown-menu-end" id="nav">
+            <div class="dropdown-menu dropdown-menu-end animate slideIn" id="nav">
                 <a href="index.html" class="dropdown-item">Home</a>
                 <a href="who_we_are.html" class="dropdown-item">Who we are</a>
                 <a href="what_we_do.html" class="dropdown-item">What we do</a>
@@ -83,39 +146,48 @@
         <img src="images/news_page_main_img.png" class="img-fluid"></img>
     </div>
     <div class="container py-5 px-5">
-        <div class="pt-4">
-            <div class="row mb-5">
-                <div class="col-lg-3 col-4 mx-auto">
+        <div class="pt-4 my-lg-5 my-sm-0">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 mx-auto super-card-div">
                     <div class="card">
-                        <img src="images/DecemberNewsletter.png"/>
+                        <img class="card-img-top" src="images/DecemberNewsletter.png"/>
+                        <div class="card-body">
+                            <p class="card-subtitle">June 27, 2022 · 3 min read</p>
+                        </div>
                     </div>
-                    <p class="card-subtitle mt-2">June 27, 2022 · 3 min read</p>
                 </div>
-                <div class="col-lg-3 col-4 mx-auto">
+                <div class="col-lg-3 col-md-4 mx-auto super-card-div">
                     <div class="card">
-                        <img src="images/AugustNewsletter.png"/>
+                        <img class="card-img-top" src="images/AugustNewsletter.png"/>
+                        <div class="card-body">
+                            <p class="card-subtitle">June 27, 2022 · 3 min read</p>
+                        </div>
                     </div>
-                    <p class="card-subtitle mt-2">June 27, 2022 · 2 min read</p>
                 </div>
-                <div class="col-lg-3 col-4 mx-auto">
+                <div class="col-lg-3 col-md-4 mx-auto super-card-div">
                     <div class="card">
-                        <img src="images/JuneNewsletter.png"/>
+                        <img class="card-img-top" src="images/JuneNewsletter.png"/>
+                        <div class="card-body">
+                            <p class="card-subtitle">June 27, 2022 · 3 min read</p>
+                        </div>
                     </div>
-                    <p class="card-subtitle mt-2">June 27, 2022 · 2 min read</p>
                 </div>
             </div>
-            <div class="row mb-5">
-                <div class="col-lg-3 col-4 mx-auto">
+        </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 mx-auto super-card-div">
                     <div class="card">
-                        <img src="images/SummerNewsletter.png"/>
+                        <img class="card-img-top" src="images/SummerNewsletter.png"/>
+                        <div class="card-body">
+                            <p class="card-subtitle">June 27, 2022 · 3 min read</p>
+                        </div>
                     </div>
-                    <p class="card-subtitle mt-2">June 13, 2018 · 2 min read</p>
                 </div>
-                <div class="col-lg-3 col-4 mx-auto">
-                    <!-- PLACEHOLDER -->
+                <div class="col-lg-3 col-md-4 mx-auto super-card-div">
+
                 </div>
-                <div class="col-lg-3 col-4 mx-auto">
-                    <!-- PLACEHOLDER -->
+                <div class="col-lg-3 col-md-4 mx-auto super-card-div">
+
                 </div>
             </div>
         </div>
