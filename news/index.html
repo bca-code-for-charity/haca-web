@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>HACA - Home</title>
+        <title>HACA - News</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -18,38 +18,6 @@
         ></script>
         <link rel="stylesheet" href="https://use.typekit.net/elp0ohg.css" />
         <style>
-            .banner-heading {
-                font-family: "bilo", sans-serif;
-                font-weight: 800;
-                font-style: normal;
-                font-size: 4vw;
-            }
-            .orange-text {
-                color: #f9a983;
-            }
-            .banner-subtext {
-                color: gray;
-                font-size: 2vw;
-            }
-
-            .subsection-title {
-                font-family: "ltc-goudy-oldstyle-pro", serif;
-                font-weight: 700;
-                font-style: normal;
-                text-align: center;
-            }
-
-            .subsection-subtext {
-                font-family: "soleil", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: gray;
-                text-align: center;
-            }
-
-            .border-bottom {
-                border-width: 5px !important;
-            }
             .card-subtitle {
                 color: gray;
                 font-family: "soleil", sans-serif;
@@ -61,18 +29,10 @@
                 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
                 font-size: 3vw;
             }
-            a.navbar-brand {
-                display: contents;
-            }
+
             @media (max-width: 767px) {
-                .btn-responsive {
-                    font-size: 0.6em;
-                }
                 .navbar-toggler-icon {
                     font-size: 5vw !important;
-                }
-                .footer {
-                    padding: 0%;
                 }
                 .card-subtitle {
                     font-size: 4vw !important;
@@ -82,28 +42,9 @@
                     padding-right: 15%;
                     padding-bottom: 5%;
                 }
-                .subsection-subtext {
-                    font-size: 4vw;
-                }
-                .banner-heading,
-                .banner-subtext {
-                    max-width: 70%;
-                }
-                .banner-heading {
-                    font-size: 4vw;
-                }
-                .banner-subtext {
-                    font-size: 3vw;
-                }
             }
-            @media (max-width: 600px) {
-                .banner-heading,
-                .banner-subtext {
-                    max-width: 60%;
-                }
-                .banner-heading {
-                    padding-top: 10%;
-                }
+            a.navbar-brand {
+                display: contents;
             }
             .footer {
                 background: linear-gradient(black, rgb(61, 60, 60));
@@ -132,8 +73,11 @@
                 color: gray;
             }
 
-            .card {
-                border: none;
+            .subsection-title {
+                font-family: "ltc-goudy-oldstyle-pro", serif;
+                font-weight: 700;
+                font-style: normal;
+                text-align: center;
             }
 
             @media (min-width: 200px) {
@@ -144,7 +88,6 @@
                     -webkit-animation-fill-mode: both;
                 }
             }
-
             @keyframes slideIn {
                 0% {
                     transform: translateY(1rem);
@@ -179,81 +122,42 @@
                 -webkit-animation-name: slideIn;
                 animation-name: slideIn;
             }
+
+            .card {
+                border: none;
+            }
         </style>
     </head>
     <body>
         <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="">
-                <img src="./images/HACA_brand_img.png" class="col-md-3 col-4 img-fluid" style="margin-left: 2%" />
+            <a class="navbar-brand" href="../">
+                <img src="../images/HACA_brand_img.png" class="col-md-3 col-4 img-fluid" style="margin-left: 2%" />
             </a>
             <div>
                 <button class="bg-white border-0" data-bs-toggle="dropdown" data-bs-target="#nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end animate slideIn" id="nav">
-                    <a href="" class="dropdown-item">Home</a>
-                    <a href="./who-we-are" class="dropdown-item">Who we are</a>
-                    <a href="./what-we-do" class="dropdown-item">What we do</a>
-                    <a href="./news" class="dropdown-item">News</a>
-                    <a href="./gallery" class="dropdown-item">Gallery</a>
-                    <a href="./contact-us" class="dropdown-item">Contact Us</a>
-                    <a href="./donate" class="dropdown-item">Donate</a>
-                    <a href="./blog" class="dropdown-item">Blog</a>
+                    <a href="../" class="dropdown-item">Home</a>
+                    <a href="../who-we-are/" class="dropdown-item">Who we are</a>
+                    <a href="../what-we-do/" class="dropdown-item">What we do</a>
+                    <a href="../news/" class="dropdown-item">News</a>
+                    <a href="../gallery/" class="dropdown-item">Gallery</a>
+                    <a href="../contact-us/" class="dropdown-item">Contact Us</a>
+                    <a href="../donate/" class="dropdown-item">Donate</a>
+                    <a href="../blog/" class="dropdown-item">Blog</a>
                 </div>
             </div>
         </nav>
-        <div class="container-fluid" style="padding: 0">
-            <div class="card">
-                <img src="./images/HomeBanner.png" class="img-fluid" />
-                <div class="card-img-overlay d-flex d-block flex-column justify-content-center" style="color: white">
-                    <div class="row">
-                        <div class="col-md-5 col-sm-7 col-10">
-                            <h1 class="card-title px-lg-5 px-sm-1 banner-heading display-3">
-                                Haitian Alliance for <span class="orange-text">Community Action</span> Inc.
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5 col-sm-7 col-10">
-                            <p class="card-text px-lg-5 px-sm-1 banner-subtext">
-                                Creating the basis for strong families and successful communities.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5 col-sm-7 col-10">
-                            <button class="btn my-4 mx-5 px-sm-5 btn-lg tn-block btn-outline-light btn-responsive">
-                                Donate
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container text-center">
+            <img src="../images/news_page_main_img.png" class="img-fluid" />
         </div>
-        <div class="container py-lg-5 py-sm-2 px-5">
-            <div class="border-bottom border-warning pb-5">
-                <h1 class="subsection-title my-4">Our Mission:</h1>
-                <h3 class="subsection-subtext my-lg-5 my-3">
-                    To create better life opportunities for the most underprivileged children in the underdeveloped
-                    rural communities of Bellevue de la Montagne, an area south of Petionville, Haiti.
-                </h3>
-                <h3 class="subsection-subtext my-lg-5 my-3">
-                    To provide them with the basic necessities of life such as food, education, and health care in order
-                    to facilitate the development of individuals into productive citizens, creating the basis for strong
-                    families and successful communities.
-                </h3>
-                <div class="text-center">
-                    <button class="btn my-4 mx-5 px-sm-5 btn-lg tn-block btn-outline-dark align-items-lg-center">
-                        Learn More
-                    </button>
-                </div>
-            </div>
-            <div class="pt-4">
-                <h1 class="subsection-title my-5 mb-md-8">Latest News</h1>
+        <div class="container py-5 px-5">
+            <div class="pt-4 my-lg-5 my-sm-0">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 mx-auto super-card-div">
                         <div class="card">
-                            <img class="card-img-top" src="./images/DecemberNewsletter.png" />
+                            <img class="card-img-top" src="../images/DecemberNewsletter.png" />
                             <div class="card-body">
                                 <p class="card-subtitle">June 27, 2022 · 3 min read</p>
                             </div>
@@ -261,7 +165,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 mx-auto super-card-div">
                         <div class="card">
-                            <img class="card-img-top" src="./images/AugustNewsletter.png" />
+                            <img class="card-img-top" src="../images/AugustNewsletter.png" />
                             <div class="card-body">
                                 <p class="card-subtitle">June 27, 2022 · 3 min read</p>
                             </div>
@@ -269,13 +173,25 @@
                     </div>
                     <div class="col-lg-3 col-md-4 mx-auto super-card-div">
                         <div class="card">
-                            <img class="card-img-top" src="./images/JuneNewsletter.png" />
+                            <img class="card-img-top" src="../images/JuneNewsletter.png" />
                             <div class="card-body">
                                 <p class="card-subtitle">June 27, 2022 · 3 min read</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 mx-auto super-card-div">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/SummerNewsletter.png" />
+                        <div class="card-body">
+                            <p class="card-subtitle">June 27, 2022 · 3 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 my-0 py-0 col-md-4 mx-auto super-card-div"></div>
+                <div class="col-lg-3 my-0 py-0 col-md-4 mx-auto super-card-div"></div>
             </div>
         </div>
         <div class="footer" style="padding-left: 2%; padding-right: 2%">
@@ -294,65 +210,64 @@
                             </div>
                         </form>
                     </div>
-                    <!-- todo add links to their socials -->
                     <div class="d-flex" style="padding-top: 30px">
                         <a href="#">
                             <img
-                                src="./footer_images/footerimg1.jpeg"
+                                src="../footer_images/footerimg1.jpeg"
                                 class="img-fluid"
                                 style="width: 70px; padding-right: 10px"
                             />
                         </a>
                         <a href="#">
                             <img
-                                src="./footer_images/footerimg2.jpeg"
+                                src="../footer_images/footerimg2.jpeg"
                                 class="img-fluid"
                                 style="width: 60px; padding-right: 10px"
                             />
                         </a>
                         <a href="#">
-                            <img src="./footer_images/footerimg3.png" class="img-fluid" style="width: 50px" />
+                            <img src="../footer_images/footerimg3.png" class="img-fluid" style="width: 50px" />
                         </a>
                     </div>
                 </div>
                 <div class="col-2 d-none d-md-block m-auto">
                     <div class="footer-subtext row" style="padding-top: 2%">
-                        <a class="footer-link" href="./contact-us/">Contact us</a>
+                        <a class="footer-link" href="../contact-us/">Contact us</a>
                     </div>
                     <div class="footer-subtext row" style="padding-top: 2%">
-                        <a class="footer-link" href="./donate/">Donations</a>
+                        <a class="footer-link" href="../donate/">Donations</a>
                     </div>
                     <div class="footer-subtext row" style="padding-top: 2%">
-                        <a class="footer-link" href="./gallery/">Gallery</a>
+                        <a class="footer-link" href="../gallery/">Gallery</a>
                     </div>
                     <div class="footer-subtext row" style="padding-top: 2%">
-                        <a class="footer-link" href="./privacy-statement/">Privacy Statement</a>
+                        <a class="footer-link" href="../privacy-statement/">Privacy Statement</a>
                     </div>
                 </div>
                 <div class="col-2 m-auto d-none d-md-block">
-                    <a href="">
-                        <img src="./footer_images/footerimg4.webp" class="img-fluid" />
+                    <a href="../">
+                        <img src="../footer_images/footerimg4.webp" class="img-fluid" />
                     </a>
                 </div>
             </div>
             <div class="row d-flex d-md-none">
                 <div class="col-6 m-auto my-5">
                     <div class="footer-subtext row" style="padding-top: 2%">
-                        <a class="footer-link" href="./contact-us/">Contact us</a>
+                        <a class="footer-link" href="../contact-us/">Contact us</a>
                     </div>
                     <div class="footer-subtext row" style="padding-top: 2%">
-                        <a class="footer-link" href="./donate/">Donations</a>
+                        <a class="footer-link" href="../donate/">Donations</a>
                     </div>
                     <div class="footer-subtext row" style="padding-top: 2%">
-                        <a class="footer-link" href="./gallery/">Gallery</a>
+                        <a class="footer-link" href="../gallery/">Gallery</a>
                     </div>
                     <div class="footer-subtext row" style="padding-top: 2%">
-                        <a class="footer-link" href="./privacy-statement/">Privacy Statement</a>
+                        <a class="footer-link" href="../privacy-statement/">Privacy Statement</a>
                     </div>
                 </div>
                 <div class="col-6 m-auto my-md-2" style="padding-bottom: 5%; max-width: 200px">
-                    <a href="">
-                        <img src="./footer_images/footerimg4.webp" class="img-fluid" />
+                    <a href="../">
+                        <img src="../footer_images/footerimg4.webp" class="img-fluid" />
                     </a>
                 </div>
             </div>
